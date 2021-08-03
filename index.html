@@ -8,7 +8,7 @@
     <meta name="author" content="Siwon" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
-    <link rel="icon" href="whale.png" />
+    <link rel="favicon" href="images/logo/whale.png" sizes="16x16" />
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
@@ -18,242 +18,304 @@
     <!-- nav -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <img class="navbar__logo__icon" src="whale.png" alt="logo" />
-        <span class="navbar__logo__name">Siwon</span>
+        <img class="logo__icon" src="images/logo/whale.png" alt="logo" />
+        <h3>Siwon</h3>
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">My work</li>
-        <li class="navbar__menu__item">Testimonial</li>
-        <li class="navbar__menu__item">Contact</li>
+        <li class="menu__item">Home</li>
+        <li class="menu__item">About</li>
+        <li class="menu__item">Skills</li>
+        <li class="menu__item">My work</li>
+        <li class="menu__item">Testimonial</li>
+        <li class="menu__item">Contact</li>
       </ul>
     </nav>
     <!-- profile -->
     <section id="profile">
-      <img src="" alt="" class="porfile__image" />
-      <h1 class="title-white">Hi, I'm Siwon</h1>
-      <p class="description-white">
-        A Software Engineer currently residing in Sydney, Australia.
-      </p>
+      <img
+        src="images/avartar/myicon.jpg"
+        alt="my-icon"
+        class="porfile__avartar"
+      />
+      <h1>
+        Hello,<br />
+        I'm Siwon
+      </h1>
+      <h3>A Software Engineer currently residing in Sydney, Australia.</h3>
       <button class="profile__button">CONTACT ME</button>
     </section>
     <!-- about -->
     <section id="about">
-      <!-- about-title -->
-      <div class="info">
-        <h1 class="title-black">About me</h1>
-        <p class="description-black">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          repellat quaerat magnam ullam expedita, libero voluptatum eos sit iste
-          accusamus deleniti blanditiis nostrum quidem consequatur asperiores
-          perferendis eum laboriosam velit.
-        </p>
-      </div>
-      <!--  about-stacts-->
-      <div class="about__stacks">
-        <div class="stacks__stack">
-          <div class="stacks__logo">
+      <h1>About me</h1>
+      <h5>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat
+        quaerat magnam ullam expedita, libero voluptatum eos sit iste accusamus
+        deleniti blanditiis nostrum quidem consequatur asperiores perferendis
+        eum laboriosam velit.
+      </h5>
+      <!--  about-major-->
+      <ul class="about__majors">
+        <li class="stacks__major">
+          <div class="major__logo">
             <i class="fab fa-html5"></i>
           </div>
-          <span class="stacks__title">Front-end</span
-          ><span class="stacks__lan"
-            >HTML, CSS, JavaScript, React, Vue, Web APIs</span
-          >
-        </div>
-        <div class="stacks__stack">
-          <div class="stacks__logo">
-            <i class="fab fa-html5"></i>
+          <span class="major__title">Front-end</span>
+          <p class="major__lan">HTML, CSS, JavaScript, Web APIs</p>
+        </li>
+        <li class="stacks__major">
+          <div class="major__logo">
+            <i class="fas fa-book"></i>
           </div>
-          <span class="stacks__title">Front-end</span
-          ><span class="stacks__lan"
-            >HTML, CSS, JavaScript, React, Vue, Web APIs</span
-          >
-        </div>
-        <div class="stacks__stack">
-          <div class="stacks__logo">
-            <i class="fab fa-html5"></i>
+          <span class="major__title">Library</span>
+          <p class="major__lan">React, TypeScript</p>
+        </li>
+        <li class="stacks__major">
+          <div class="major__logo">
+            <i class="fas fa-server"></i>
           </div>
-          <span class="stacks__title">Front-end</span
-          ><span class="stacks__lan"
-            >HTML, CSS, JavaScript, React, Vue, Web APIs</span
-          >
-        </div>
-      </div>
+          <span class="major__title">Back-end</span>
+          <p class="major__lan">Python, C</p>
+        </li>
+      </ul>
       <!-- about-spec -->
       <div class="about__specs">
-        <div class="specs__spec">
-          <image class="specs__spec__logo"></image>
-          <div class="specs__spec__info">
-            <span class="spec__info__description"
+        <div class="education">
+          <img class="education__logo" src="images/uni-icon.png" alt="" />
+          <div class="education__info">
+            <span class="info__description"
               >Currently working Samsung as Software Engineer</span
-            ><span class="spec__info__duration">2019 Sept - Until now</span>
+            ><span class="info__duration">2019 Sept - Until now</span>
           </div>
         </div>
-        <div class="specs__spec">
-          <image class="specs__spec__logo"></image>
-          <div class="specs__spec__info">
-            <span class="spec__info__description"
+        <div class="spec">
+          <image class="spec__logo"></image>
+          <div class="spec__info">
+            <span class="info__description"
               >Currently working Samsung as Software Engineer</span
-            ><span class="spec__info__duration">2019 Sept - Until now</span>
+            ><span class="info__duration">2019 Sept - Until now</span>
           </div>
         </div>
       </div>
     </section>
     <!-- skill -->
-    <section id="sill">
-      <!-- skill-info -->
-      <div class="info">
-        <h1 class="title-black">About me</h1>
-        <h3 class="sub-title">skills & Attributes</h3>
-        <p class="description-black">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          repellat quaerat magnam ullam expedita, libero voluptatum eos sit iste
-          accusamus deleniti blanditiis nostrum quidem consequatur asperiores
-          perferendis eum laboriosam velit.
-        </p>
-      </div>
+    <section id="skill">
+      <h1>About me</h1>
+      <h3>skills & Attributes</h3>
+      <h5>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat
+        quaerat magnam ullam expedita, libero voluptatum eos sit iste accusamus
+        deleniti blanditiis nostrum quidem consequatur asperiores perferendis
+        eum laboriosam velit.
+      </h5>
       <!-- skills-set -->
-      <div class="skills__set">
-        <!-- skillsset-main -->
-        <div class="skills__set__main">
-          <span class="set__main__title"></span>
-          <div class="set__main__content">
-            <!-- set-main-item 1-->
-            <div class="set__main__item">
-              <!-- set-main-item-info -->
-              <div class="item__info">
-                <span class="item__info__title">HTML</span
-                ><span class="item__info__percentage">97%</span>
+      <div class="skillset">
+        <!-- skillsset-left -->
+        <div class="skillset__left">
+          <h5>Skills</h5>
+          <ul class="skills">
+            <li class="skill">
+              <div class="skill__description">
+                <span>HTML</span><span>97%</span>
               </div>
-              <!-- set-main-item-progress -->
-              <div class="item__progress-bar">
-                <div class="progress-bar__achieve"></div>
+              <div class="skill__bar">
+                <div class="bar__value"></div>
               </div>
-            </div>
-            <!-- set-main-item 2-->
-            <div class="set__main__item">
-              <!-- set-main-item-info -->
-              <div class="item__info">
-                <span class="item__info__title">HTML</span
-                ><span class="item__info__percentage">97%</span>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>CSS</span><span>90%</span>
               </div>
-              <!-- set-main-item-progress -->
-              <div class="item__progress-bar">
-                <div class="progress-bar__achieve"></div>
+              <div class="skill__bar">
+                <div class="bar__value"></div>
               </div>
-            </div>
-            <!-- set-main-item 3-->
-            <div class="set__main__item">
-              <!-- set-main-item-info -->
-              <div class="item__info">
-                <span class="item__info__title">HTML</span
-                ><span class="item__info__percentage">97%</span>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>JAVASCRIPT</span><span>70%</span>
               </div>
-              <!-- set-main-item-progress -->
-              <div class="item__progress-bar">
-                <div class="progress-bar__achieve"></div>
+              <div class="skill__bar">
+                <div class="bar__value"></div>
               </div>
-            </div>
-            <!-- set-main-item 4-->
-            <div class="set__main__item">
-              <!-- set-main-item-info -->
-              <div class="item__info">
-                <span class="item__info__title">HTML</span
-                ><span class="item__info__percentage">97%</span>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>TYPESCRIPT</span><span>0%</span>
               </div>
-              <!-- set-main-item-progress -->
-              <div class="item__progress-bar">
-                <div class="progress-bar__achieve"></div>
+              <div class="skill__bar">
+                <div class="bar__value"></div>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="skill">
+              <div class="skill__description">
+                <span>REACT</span><span>0%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="bar__value"></div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <!-- skillsset-sub -->
-        <div class="skills__set__sub">
-          <!-- skillset-sub-tools -->
-          <div class="set__sub__tools">
-            <span class="sub__title">Tools</span
-            ><span class="sub__content">Visual Studio</span>
+        <!-- skillsset-right -->
+        <div class="skillset__right">
+          <div class="tools">
+            <h5>Tools</h5>
+            <ul>
+              <li>Visual Studio</li>
+            </ul>
           </div>
-          <!-- skillset-sub-etc -->
-          <div class="set__sub__etc">
-            <span class="sub__title">Etc</span
-            ><span class="sub__content">Git</span>
+          <div class="etc">
+            <h5>Etc</h5>
+            <ul>
+              <li>Git</li>
+              <li>Japanese</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     <!-- work -->
     <section id="work">
-      <!-- work-info -->
-      <div class="info">
-        <h1 class="title-black">My work</h1>
-        <p class="description-black">Projects</p>
-      </div>
+      <h1>My work</h1>
+      <h5>Projects</h5>
       <!-- work-menu -->
-      <div class="work__menu">
-        <button class="work__menu__btn">All</button>
-        <button class="work__menu__btn">Front-end</button>
-        <button class="work__menu__btn"></button>
-        <button class="work__menu__btn"></button>
+      <div class="work-categories">
+        <button class="category__button">
+          All<span class="category__count">8</span>
+        </button>
+        <button class="category__button">
+          Web-basic<span class="category__count">3</span>
+        </button>
+        <button class="category__button">
+          React<span class="category__count"></span>3
+        </button>
+        <button class="category__button">
+          TypeScript<span class="category__count">2</span>
+        </button>
       </div>
       <!-- work-items -->
-      <ul class="work__itmes">
-        <li class="work__items__item"><image></image></li>
-        <li class="work__items__item"><image></image></li>
-        <li class="work__items__item"><image></image></li>
-        <li class="work__items__item"><image></image></li>
-        <li class="work__items__item"><image></image></li>
-        <li class="work__items__item"><image></image></li>
-        <li class="work__items__item"><image></image></li>
-        <li class="work__items__item"><image></image></li>
+      <ul class="work__projects">
+        <li class="project">
+          <a href="#" target="blank">
+            <img src="images/projects/project1.png" alt="" />
+          </a>
+          <div class="project__description">
+            <h5>Youtube site</h5>
+            <span>Clone Coding with HTML & CSS</span>
+          </div>
+        </li>
+        <li class="project">
+          <a href="#" target="blank">
+            <img src="images/projects/project2.png" alt="" />
+          </a>
+          <div class="project__description">
+            <h5>Youtube site</h5>
+            <span>Clone Coding with HTML & CSS</span>
+          </div>
+        </li>
+        <li class="project">
+          <a href="#" target="blank">
+            <img src="images/projects/project3.png" alt="" />
+          </a>
+          <div class="project__description">
+            <h5>Youtube site</h5>
+            <span>Clone Coding with HTML & CSS</span>
+          </div>
+        </li>
+        <li class="project">
+          <a href="#" target="blank">
+            <img src="images/projects/project4.png" alt="" />
+          </a>
+          <div class="project__description">
+            <h5>Youtube site</h5>
+            <span>Clone Coding with HTML & CSS</span>
+          </div>
+        </li>
+        <li class="project">
+          <a href="#" target="blank">
+            <img src="images/projects/project5.png" alt="" />
+          </a>
+          <div class="project__description">
+            <h5>Youtube site</h5>
+            <span>Clone Coding with HTML & CSS</span>
+          </div>
+        </li>
+        <li class="project">
+          <a href="#" target="blank">
+            <img src="images/projects/project6.png" alt="" />
+          </a>
+          <div class="project__description">
+            <h5>Youtube site</h5>
+            <span>Clone Coding with HTML & CSS</span>
+          </div>
+        </li>
+        <li class="project">
+          <a href="#" target="blank">
+            <img src="images/projects/project7.png" alt="" />
+          </a>
+          <div class="project__description">
+            <h5>Youtube site</h5>
+            <span>Clone Coding with HTML & CSS</span>
+          </div>
+        </li>
+        <li class="project">
+          <a href="#" target="blank">
+            <img src="images/projects/project8.png" alt="" />
+          </a>
+          <div class="project__description">
+            <h5>Youtube site</h5>
+            <span>Clone Coding with HTML & CSS</span>
+          </div>
+        </li>
       </ul>
     </section>
     <!-- testimonials -->
     <section id="testimonials">
-      <!-- testimonials-info -->
-      <div class="info">
-        <h1 class="title-black">My work</h1>
-        <p class="description-black">Projects</p>
-      </div>
+      <h1>My work</h1>
+      <h5>Projects</h5>
       <!-- testimonials-container -->
-      <div class="testimonials__container">
-        <!-- testimonials-container-item 1-->
-        <div class="testimonials__item">
-          <image class="item__pic"></image>
-          <div class="item__content">
-            <p class="item__content__phrase">
+      <ul class="testimonials">
+        <li class="testimonial">
+          <img
+            src="images/avartar/의현.png"
+            alt=""
+            class="testimonial__avartar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               suscipit nam temporibus, soluta ea natus enim incidunt rem quaerat
               rerum saepe. Recusandae culpa sit dicta magnam, asperiores
               accusantium aut molestias!
             </p>
-            <span class="item__content__name">Siwon/TigerSpike</span>
+            <span class="name"><a href="#">Siwon</a>/TigerSpike</span>
           </div>
-        </div>
-        <!-- testimonials-container-item 2-->
-        <div class="testimonials__item">
-          <image class="item__pic"></image>
-          <div class="item__content">
-            <p class="item__content__phrase">
+        </li>
+        <li class="testimonial">
+          <img
+            src="images/avartar/의현.png"
+            alt=""
+            class="testimonial__avartar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               suscipit nam temporibus, soluta ea natus enim incidunt rem quaerat
               rerum saepe. Recusandae culpa sit dicta magnam, asperiores
               accusantium aut molestias!
             </p>
-            <span class="item__content__name">Siwon/TigerSpike</span>
+            <span class="name"><a href="#">Siwon</a>/TigerSpike</span>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
     <!-- contact -->
     <section id="contact">
-      <h1 class="title-white">Let's talk</h1>
-      <p class="description-white">sight41siyah@gmail.com</p>
-      <i class="contact__logo"><a href="#" class="contact__link"></a></i>
-      <footer>2020 Siwon Hwang ·All rights reserved</footer>
+      <h1>Let's talk</h1>
+      <h3>sight41siyah@gmail.com</h3>
+      <div class="contact__links">
+        <i class="fab fa-github"><a href="#"></a></i>
+      </div>
+      <span>2020 Siwon Hwang ·All rights reserved</span>
     </section>
   </body>
 </html>
