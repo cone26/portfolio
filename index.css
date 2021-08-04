@@ -5,8 +5,9 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-pink: #e1cec8;
+  --color-dark-pink: #eccecb;
+  --color-melon: #d1ddd4;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -26,4 +27,56 @@
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+}
+/* Universal Tag */
+* {
+  box-sizing: border-box;
+}
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin: 16px 0px;
+}
+h3 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  margin: 8px 0px;
+}
+h5 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 8px 0px;
+}
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 4px 0px;
+}
+body {
+  margin: 0;
+}
+/* nav */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, var(--color-pink), var(--color-melon));
+  color: var(--color-white);
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+.logo__icon {
+  width: 35px;
+  height: 35px;
+}
+.navbar__menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.menu__item {
+  margin: 0 8px;
 }
