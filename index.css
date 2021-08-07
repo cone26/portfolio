@@ -351,7 +351,52 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all var(--animation-duration) ease-in-out;
 }
 .project__description {
   display: none;
+}
+.project:hover {
+  transform: scale(1.04);
+  background-color: rgba(238, 238, 238, 0.5);
+}
+#testimonials {
+  background-color: var(--color-light-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonial {
+  display: flex;
+  margin-top: 1rem;
+}
+.testimonial__avartar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+.testimonial__speech-bubble {
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.name a {
+  color: var(--color-dark-pink);
+  text-decoration: none;
+}
+.testimonial:last-child {
+  display: flex;
+  flex-direction: row-reverse;
 }
