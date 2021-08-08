@@ -58,6 +58,14 @@ p {
 body {
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 /* nav */
 
 #navbar {
@@ -66,17 +74,13 @@ body {
   align-items: center;
   background: linear-gradient(to right, var(--color-pink), var(--color-melon));
   color: var(--color-white);
-  /* position: sticky;
-  top: 0px;
-  left: 0px; */
 }
 .navbar__logo {
   display: flex;
   align-items: center;
-}
-#navbar h3 {
   cursor: pointer;
 }
+
 .logo__icon {
   width: 35px;
   height: 35px;
@@ -85,9 +89,6 @@ body {
 .navbar__menu {
   display: flex;
   align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 .menu__item {
   margin: 0px 8px;
@@ -147,9 +148,8 @@ body {
 }
 
 .about__majors {
-  list-style-type: none;
   display: flex;
-  padding: 0;
+
   justify-content: space-around;
   margin-top: 5em;
 }
@@ -217,10 +217,7 @@ body {
   margin-top: 1em;
   margin-bottom: 0;
 }
-#skill ul {
-  list-style-type: none;
-  padding: 0;
-}
+
 .skillset {
   width: 80%;
   height: 400px;
@@ -329,7 +326,6 @@ body {
 }
 .projects__top,
 .projects__bottom {
-  list-style-type: none;
   display: flex;
 
   justify-content: center;
@@ -367,7 +363,6 @@ body {
   align-items: center;
 }
 .testimonials {
-  list-style-type: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -394,7 +389,6 @@ body {
 
 .name a {
   color: var(--color-dark-pink);
-  text-decoration: none;
 }
 .testimonial:last-child {
   display: flex;
