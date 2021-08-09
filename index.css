@@ -76,9 +76,12 @@ button {
   outline: none;
   cursor: pointer;
 }
+/* section */
 .section {
   padding: 50px;
   text-align: center;
+}
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -207,22 +210,12 @@ button {
 /* skills */
 #skill {
   background-color: var(--color-yellow);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-#skill h1 {
-  margin-top: 1em;
-  margin-bottom: 0;
 }
 
 .skillset {
-  width: 80%;
-  height: 400px;
   display: flex;
   color: var(--color-light-white);
-  margin: 3rem 0 7rem 0;
+  margin-top: 4rem;
 }
 .skill__bar {
   width: 90%;
@@ -232,13 +225,13 @@ button {
 
 .skillset__left {
   background-color: var(--color-dark-grey);
-  width: 60%;
+  flex-basis: 60%;
 }
 
 .skillset__right {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  flex-basis: 40%;
 }
 .tools {
   background-color: var(--color-grey);
@@ -256,33 +249,20 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 .skill__description {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 6px;
+  padding: 12px 24px;
+  /* margin-bottom: 6px; */
 }
 .bar__value {
   height: 3px;
   background-color: var(--color-orange);
 }
-.html {
-  width: 97%;
-}
-.css {
-  width: 90%;
-}
-.js {
-  width: 70%;
-}
-.ts {
-  width: 0%;
-}
-.react {
-  width: 0%;
-}
+
 /* skill part class name... especially bar__value */
 #work {
   display: flex;
