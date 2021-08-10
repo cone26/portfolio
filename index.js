@@ -13,3 +13,20 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('navbar--dark');
   }
 });
+//contact btn event
+contactBtn.addEventListener('click', () => {
+  contact.scrollIntoView({ behavior: 'smooth' });
+});
+
+//navmenu btn event
+navMenu.addEventListener('click', (e) => {
+  const target = e.target;
+  const link = target.dataset.link;
+  console.log(target.dataset.link);
+
+  if (link == null) {
+    return;
+  }
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+});
