@@ -416,7 +416,24 @@ button {
 .contact__links i:hover {
   transform: scale(1.1);
 }
-
+.arrow {
+  width: 55px;
+  height: 55px;
+  background-color: var(--color-melon);
+  color: var(--color-white);
+  font-size: var(--font-medium);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-duration) ease-in;
+}
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 @media screen and (max-width: 768px) {
   .navbar__toggle {
     display: block;
