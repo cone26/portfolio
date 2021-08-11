@@ -28,6 +28,7 @@ navMenu.addEventListener('click', (e) => {
     return;
   }
   scrollIntoView(link);
+  navMenu.classList.remove('open');
 });
 
 //content fade out when scroll down
@@ -64,7 +65,6 @@ workBtn.addEventListener('click', (e) => {
   const target =
     e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   target.classList.add('selected');
-
   projectContainer.classList.add('anime-out');
 
   setTimeout(() => {
@@ -80,6 +80,12 @@ workBtn.addEventListener('click', (e) => {
   }, 300);
 });
 
+//nav menu open
+const navToggleBtn = document.querySelector('.navbar__toggle');
+
+navToggleBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+});
 //button function
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
