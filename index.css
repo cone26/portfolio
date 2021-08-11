@@ -130,17 +130,15 @@ button {
   margin: 0px 8px;
   padding: 8px;
   border-radius: var(--border-radius-size);
+  border: 1px solid transparent;
   transition: all var(--animation-duration) ease-in-out;
 }
 .menu__item:hover {
   background-color: var(--color-melon);
+  border-color: var(--color-white);
   cursor: pointer;
 }
-.menu__item.active {
-  padding: 5px;
-  border: 1px solid var(--color-white);
-  border-radius: var(--border-radius-size);
-}
+
 /* profile */
 #profile {
   background: center/cover no-repeat url('images/background.png');
@@ -294,7 +292,7 @@ button {
   border-radius: var(--border-radius-size);
   transition: background-color var(--animation-duration);
 }
-.category__button.active,
+.category__button.selected,
 .category__button:hover {
   background-color: var(--color-blue);
 }
@@ -313,7 +311,7 @@ button {
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
-.category__button.active .category__count,
+.category__button.selected .category__count,
 .category__button:hover .category__count {
   top: 0;
   opacity: 1;

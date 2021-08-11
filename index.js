@@ -58,6 +58,13 @@ workBtn.addEventListener('click', (e) => {
   if (key == null) {
     return;
   }
+  //btn click event
+  const selector = document.querySelector('.category__button.selected');
+  selector.classList.remove('selected');
+  const target =
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected');
+
   projectContainer.classList.add('anime-out');
 
   setTimeout(() => {
