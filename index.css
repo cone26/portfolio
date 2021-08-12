@@ -75,6 +75,7 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 0;
 }
 /* section */
 .section {
@@ -289,6 +290,7 @@ button {
 .category__button {
   border: 0.7px solid var(--color-light-grey);
   padding: 8px 30px;
+  position: relative;
   border-radius: var(--border-radius-size);
   transition: background-color var(--animation-duration);
 }
@@ -305,15 +307,15 @@ button {
   line-height: 20px;
   border-radius: 50%;
   color: var(--color-white);
-  position: relative;
-  left: 4px;
+  position: absolute;
+  right: 6px;
   top: -20px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
 .category__button.selected .category__count,
 .category__button:hover .category__count {
-  top: 0;
+  top: 5px;
   opacity: 1;
 }
 .projects {
@@ -446,6 +448,18 @@ button {
   pointer-events: auto;
 }
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 38px;
+    --font-medium: 20px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
   .navbar__toggle {
     display: block;
   }
@@ -453,6 +467,9 @@ button {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-melon);
+  }
+  #navbar.navbar--dark {
+    padding: 0;
   }
   .navbar__menu {
     flex-direction: column;
@@ -468,12 +485,16 @@ button {
   }
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
   }
   .major__logo {
     margin: auto;
   }
   .stacks__major {
-    margin-bottom: 38px;
+    margin-bottom: 20px;
+  }
+  .about__specs {
+    margin-top: 2rem;
   }
   .skillset {
     flex-direction: column;
@@ -481,11 +502,42 @@ button {
   .skillset__right ul {
     margin-bottom: 38px;
   }
+  .category__button {
+    padding: 8px 30px;
+    width: 100%;
+    margin: 4px 0;
+  }
+  .category__count {
+    right: 4px;
+  }
   .project {
     flex-grow: 1;
   }
   .testimonial__avartar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+  .testimonial__avartar:nth-child(odd),
+  .testimonial__avartar:nth-child(even) {
+    margin: 16px 0;
+  }
+  .testimonial:last-child {
+    flex-direction: column-reverse;
+  }
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrow {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-regular);
+    right: 16px;
+    bottom: 16px;
+    z-index: 1;
+  }
+  .navbar__toggle {
+    right: 24px;
+    top: 20px;
   }
 }
